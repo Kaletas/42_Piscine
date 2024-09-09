@@ -6,7 +6,7 @@
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 00:13:54 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/10 00:22:05 by bkaleta          ###   ########.fr       */
+/*   Updated: 2024/09/10 00:29:32 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
 }
-
+//This is for test purpose only
 // int	main(void)
 // {
 // 	int	value;
