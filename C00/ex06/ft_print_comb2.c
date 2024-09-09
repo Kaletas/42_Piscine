@@ -1,49 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/09 19:25:12 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/09 20:08:11 by bkaleta          ###   ########.fr       */
+/*   Created: 2024/09/09 20:07:43 by bkaleta           #+#    #+#             */
+/*   Updated: 2024/09/09 22:35:39 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_comb(void);
+void	ft_print_comb2(void);
 
-void	ft_print_comb(void)
+void	ft_putchar(char c)
 {
-	int	f_digit;
-	int	s_digit;
-	int	t_digit;
-
-	f_digit = '0';
-	while (f_digit <= '7')
-	{
-		s_digit = f_digit + 1;
-		while (s_digit <= '8')
-		{
-			t_digit = s_digit + 1;
-			while (t_digit <= '9')
-			{
-				write(1, &f_digit, 1);
-				write(1, &s_digit, 1);
-				write(1, &t_digit, 1);
-				if (f_digit != '7' || s_digit != '8' || t_digit != '9')
-					write(1, ", ", 2);
-				t_digit++;
-			}
-			s_digit++;
-		}
-		f_digit++;
-	}
+	write(1, &c, 1);
 }
 
+void	ft_print_comb2(void)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	while (i <= 98)
+	{
+		j = i + 1;
+		while (j <= 99)
+		{
+			ft_putchar(i / 10 + '0');
+			ft_putchar(i % 10 + '0');
+			ft_putchar(' ');
+			ft_putchar(j / 10 + '0');
+			ft_putchar(j % 10 + '0');
+			if (!(i == 98 && j == 99))
+			{
+				ft_putchar(',');
+				ft_putchar(' ');
+			}
+			j++;
+		}
+		i++;
+	}
+}
 //This is for test purpose only
 // int	main(void)
 // {
-// 	ft_print_comb();
+// 	ft_print_comb2();
 // }
