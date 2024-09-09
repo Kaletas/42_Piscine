@@ -6,7 +6,7 @@
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 00:07:46 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/09 00:11:25 by bkaleta          ###   ########.fr       */
+/*   Updated: 2024/09/09 19:18:32 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void	ft_print_numbers(void)
 	}
 }
 
+//This is for test purpose only
 /*int	main(void)
 {
 	ft_print_numbers();
