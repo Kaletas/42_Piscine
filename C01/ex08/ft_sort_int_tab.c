@@ -6,7 +6,7 @@
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 12:49:52 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/10 13:04:15 by bkaleta          ###   ########.fr       */
+/*   Updated: 2024/09/11 14:24:10 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ void	ft_sort_int_tab(int *tab, int size)
 // 	int	tab[] = {42, -1337, 17, 54, 13, 80085, 2137};
 // 	int	size = 7;
 // 	int	i = 0;
-
 
 // 	printf("BEFORE SORT:\n");
 // 	while (tab[i])
