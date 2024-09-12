@@ -6,9 +6,11 @@
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 23:56:54 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/13 00:03:48 by bkaleta          ###   ########.fr       */
+/*   Updated: 2024/09/13 00:41:12 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_putstr(char *str);
 
