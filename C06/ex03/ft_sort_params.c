@@ -6,7 +6,7 @@
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 11:54:32 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/18 00:13:30 by bkaleta          ###   ########.fr       */
+/*   Updated: 2024/09/18 00:21:59 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strcmp(char *s1, char *s2);
 void	ft_putstr(char *str);
-void	ft_bubblesort(char **a, char **b);
+void	ft_swap(char **a, char **b);
 void	ft_sort_params(int ac, char **av);
 
 void	ft_sort_params(int ac, char **av)
@@ -29,14 +29,14 @@ void	ft_sort_params(int ac, char **av)
 		while (j < ac - 1)
 		{
 			if (ft_strcmp(av[j], av[j + 1]) > 0)
-				ft_bubblesort(&av[j], &av[j + 1]);
+				ft_swap(&av[j], &av[j + 1]);
 			j++;
 		}
 		i++;
 	}
 }
 
-void	ft_bubblesort(char **a, char **b)
+void	ft_swap(char **a, char **b)
 {
 	char	*temp;
 
