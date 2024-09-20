@@ -6,7 +6,7 @@
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 14:11:09 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/20 14:44:20 by bkaleta          ###   ########.fr       */
+/*   Updated: 2024/09/20 22:28:13 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ typedef struct s_point
 	int	x;
 	int	y;
 }	t_point;
-
 
 void	set_point(t_point *point);
 
