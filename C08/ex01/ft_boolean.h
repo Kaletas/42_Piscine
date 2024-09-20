@@ -1,33 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*   ft_boolean.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 11:50:55 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/20 14:11:48 by bkaleta          ###   ########.fr       */
+/*   Created: 2024/09/20 14:11:03 by bkaleta           #+#    #+#             */
+/*   Updated: 2024/09/20 14:35:27 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_prime(int nb);
+#ifndef FT_BOOLEAN_H
+# define FT_BOOLEAN_H
 
-int	ft_is_prime(int nb)
-{
-	int	i;
+# include <unistd.h>
 
-	if (nb <= 1)
-		return (0);
-	if (nb == 2)
-		return (1);
-	if (nb % 2 == 0)
-		return (0);
-	i = 3;
-	while (i <= (nb / 2))
-	{
-		if (nb % i == 0)
-			return (0);
-		i += 2;
-	}
-	return (1);
-}
+typedef int	t_bool;
+
+# define TRUE 1
+# define FALSE 0
+# define EVEN_MSG "I have an even number of arguments.\n"
+# define ODD_MSG "I have an odd number of arguments.\n"
+# define SUCCESS 0
+# define EVEN
+
+void	ft_putstr(char *str);
+t_bool	ft_is_even(int nbr);
+
+#endif

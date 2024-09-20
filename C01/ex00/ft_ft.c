@@ -6,11 +6,11 @@
 /*   By: bkaleta <bkaleta@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 00:05:57 by bkaleta           #+#    #+#             */
-/*   Updated: 2024/09/10 00:14:02 by bkaleta          ###   ########.fr       */
+/*   Updated: 2024/09/20 14:11:48 by bkaleta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+//#include <unistd.h>
 //#include <stdio.h>
 
 void	ft_ft(int *nbr);
